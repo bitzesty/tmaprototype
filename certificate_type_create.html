@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>Tariff Management Application - Find certificates</title>
+    <title>Tariff Management Application - View certificate type</title>
 
     <!--[if gt IE 8]><!--><link href="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-e35981be025be5acc30ca86c82a171fe06fa3580b5b52044abf5df9bb7273e17.css" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-ie6-9ea8f2161855bd23b3216b9c1f38053de00694d577d4025504749df2480d65ca.css" media="screen" rel="stylesheet" /><![endif]-->
@@ -81,6 +81,7 @@
 
       </div>
     </header>
+
 <!-- GLOBAL HEADER ENDS HERE //-->
 
 
@@ -88,45 +89,52 @@
 <div id="global-header-bar"></div>
 
 	<div id="wrapper" class="tariff service">
+        <div class="phase-banner">
+                <p>
+                        <strong class="phase-tag">ALPHA</strong>
+                        <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+                </p>
+        </div>
 		<main id="content" role="main">
-			<div class="govuk-breadcrumbs nmb">
+      <div class="govuk-breadcrumbs nmb">
 				<ol>
-					<li><a href="/">Home</a></li>
-					<li>Certificate types</li>
+          <li><a href="/">Home</a></li>
+          <li><a href="certificate_find.html">Certificate types</a></li>
+					<li>New certificate type</li>
 				</ol>
 			</div>
 			<header>
-				<h1 class="heading-large">Certificate types</h1>
-				<p class="font-xsmall">Please use this screen to view and amend certificate types.</p>
-			</header>
+            <h1 class="heading-large">Create certificate type</h1>
+            <p class="font-xsmall">Use this form to create a new certificate type</p>
 
-      <table class="font-xxsmall" style="margin-top:20px">
-          <tr>
-            <th width="20%">Certificate type ID</th>
-            <th width="70%">Certificate type</th>
-            <th class="r" width="10%">Action</th>
-          </tr>
-          <tr><td>A</td><td>Certificate of authenticity</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>E</td><td>Export certificate/licence/document from country of origin</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>H</td><td>HANDI, LOOMS certificate</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>I</td><td>Surveillance certificate/licence/ document issued by one of the Member States</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>L</td><td>Import certificate/licence/document</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>C</td><td>Other certificates</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>X</td><td>Export licence</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>D</td><td>Anti-dumping/countervailing document</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>T</td><td>T-Document</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>U</td><td>Certificate of origin</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>P</td><td>Ingredients</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>K</td><td>Tariff quota</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>Y</td><td>Particular provisions</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>N</td><td>UN/EDIFACT certificates</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>R</td><td>Export refunds</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>9</td><td>National Document</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
-<tr><td>Z</td><td>More certificates</td><td class="r"><a href="certificate_type_view.html">View / edit</a></td></tr>
 
-        </table>
+            <form style="margin-top:32px" action="certificate_type_find.html" method="post">
 
-<p class="mt1 font-xsmall"><a href="certificate_type_create.html">Create a new certificate type</a></p>
+              <div class="form-group">
+      					<label class="form-label">Enter certificate type ID
+                  <span class="form-hint">Please enter a single digit alphanumeric code</span></label>
+      					<input type="text" maxlength="1" class="form-control form-control-1-4 font-xsmall" value="" style="width:100px"></input>
+      				</div>
+
+              <div class="form-group">
+                <label class="form-label">Enter certificate type description</label>
+                <textarea class="form-control form-control-2-4 font-xsmall" name="textarea" id="textarea" rows="1"></textarea>
+              </div>
+
+              <div class="form-group">
+                <button class="button" type="submit" id="signin">Update certificate type</button>
+              </div>
+
+              <hr>
+
+              <h2 class="heading-small">Certificate type usage</h2>
+              <p class="font-xsmall">This table lists the certificate to which this certificate type is assigned.</p>
+
+
+
+
+
+
 
 		</main>
   </div>
