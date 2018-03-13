@@ -1,0 +1,29 @@
+.tma_header {float:right;margin-right:10px;margin-top:6px}
+.tma_header li {float:left;display:block;margin:0px 10px;}
+.tma_header li a {color:#fff}
+.w30 {width:30%;margin-right:3.3%;float:left}
+.fl {width:100px;margin-right:3.3%;float:left}
+.nl {clear:both;padding-top:32px;display:block;}
+.nmb {margin-bottom:0px;padding-bottom:0px}
+form select.font-xsmall {font-size:16px}
+.nopad {margin:0px;padding:0px}
+form p {margin-top:8px;}
+form .form-label {font-size:16px;}
+form .form-label2 {font-size:16px;}
+form span.form-hint {font-size:16px;}
+textarea.font-xsmall  {font-size:16px;}
+form input.font-xsmall  {font-size:16px;}
+.lozenge {margin-right:10px;padding:0px 5px 0px 5px;border:1px solid #333;border-radius:5px;}
+table.font-xxsmall th {font-size:14px;font-weight:bold;vertical-align:top}
+table.font-xxsmall td {font-size:14px;vertical-align:top;}
+table.font-xsmall th {font-size:16px;font-weight:bold;vertical-align:top}
+table.font-xsmall td {font-size:16px;vertical-align:top;}
+.paging {margin-top:20px;}
+.paging p.font-xxsmall {font-size:14px;}
+.paging .page {font-size:12px;margin-right:2px;padding:1px 6px 0px 5px;border:1px solid #333;border-radius:1px;}
+.paging .page a {text-decoration:none;color:#000;}
+.mt1 {margin-top: 16px;}
+.mt2 {margin-top: 32px;}
+.r {text-align:right;}
+td.level-2 {padding-left:32px;}
+td.level-3 {padding-left:64px;}
