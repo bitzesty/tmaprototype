@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>Tariff Management Application - Home</title>
+    <title>Tariff Management Application - Create nomenclature group</title>
 
     <!--[if gt IE 8]><!--><link href="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-e35981be025be5acc30ca86c82a171fe06fa3580b5b52044abf5df9bb7273e17.css" media="screen" rel="stylesheet" /><!--<![endif]-->
     <!--[if IE 6]><link href="https://assets.trade-tariff.service.gov.uk/tariff/govuk-template-ie6-9ea8f2161855bd23b3216b9c1f38053de00694d577d4025504749df2480d65ca.css" media="screen" rel="stylesheet" /><![endif]-->
@@ -86,137 +86,84 @@
 
 <!-- CONTENT STARTS HERE //-->
 <div id="global-header-bar"></div>
+
 	<div id="wrapper" class="tariff service">
-			<div class="phase-banner">
-					<p>
-							<strong class="phase-tag">ALPHA</strong>
-              <span>This is a new service – your <a href="mailto:matt.lavis@digital.trade.gov.uk">feedback</a> will help us to improve it.</span>
-					</p>
-			</div>
-			<main id="content" role="main">
-			<!--<div class="govuk-breadcrumbs nmb">
+    <div class="phase-banner">
+        <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a new service – your <a href="mailto:matt.lavis@digital.trade.gov.uk">feedback</a> will help us to improve it.</span>
+        </p>
+    </div>
+		<main id="content" role="main">
+			<div class="govuk-breadcrumbs nmb">
 				<ol>
 					<li><a href="/">Home</a></li>
-					<li><a href="/">Home</a></li>
-					<li><a href="/">Home</a></li>
+          <li><a href="nomenclature_groups.html">Nomenclature groups</a></li>
+          <li>Create nomenclature group</li>
 				</ol>
-			</div>//-->
+			</div>
 			<header>
-				<h1 class="heading-large">Welcome, Stephanie</h1>
-				<p class="font-xsmall">Sed eget augue et nunc tincidunt varius sit amet a nisl. Nam tincidunt leo sem. Pellentesque quis libero ex. Etiam in ante vestibulum, accumsan quam nec, volutpat nunc. Nulla ac massa vitae nunc commodo suscipit. Suspendisse dapibus aliquam nulla nec volutpat. Aenean ante felis, accumsan a massa et, pellentesque venenatis tortor.</p>
+				<h1 class="heading-large">Create nomenclature group</h1>
+				<p class="font-xsmall">Use this form to create a new nomenclature group.</p>
+
 			</header>
 
-			<h2 class="heading-small nl">Tasks and favourites</h2>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="#">My tasks</a></h3>
-				<p class="font-xsmall">View a list of tasks assigned to you</p>
-			</div>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="my_regulations.html">My regulations</a></h3>
-				<p class="font-xsmall">List regulations added to ‘my favourites’</p>
-			</div>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="my_measures.html">My measures</a></h3>
-				<p class="font-xsmall">List measures added to ‘my favourites’</p>
-			</div>
+			<form style="margin-top:32px" action="#" method="post">
+				<div class="form-group">
+					<label class="form-label">Select the footnote type</label>
+					<select class="form-control form-control-1-3 font-xsmall">
+						<option value="0">--select footnote type--</option>
+					</select>
+          <p class="font-xsmall"><a href="">View and edit footnote types</a></p>
+				</div>
+
+				<div class="form-group">
+					<label class="form-label">Enter the date on which to execute this change</label>
+
+          <div class="form-group" style="margin-bottom:8px;">
 
 
-			<h2 class="heading-small nl">Regulations</h2>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="regulation_create.html">Create a regulation</a></h3>
-				<p class="font-xsmall">Create a new trade agreement, trade remedy, quota or control regulation</p>
-			</div>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="regulation_find.html">Find a regulation</a></h3>
-				<p class="font-xsmall">Search for an existing regulation on the database to view or make changes</p>
-			</div>
+            <div class="multiple-choice">
+              <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+              <label class="font-xsmall" for="radio-inline-1">Immediately</label>
+            </div>
+            <div class="multiple-choice">
+              <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+              <label class="font-xsmall" for="radio-inline-2">Enter an execution date for the change</label>
+            </div>
+          </div>
+
+      <div class="form-group" style="margin-left:26px;">
+        <div class="column-half nopad">
+          <select class="form-control form-control-1-4 font-xsmall">
+            <option value="0">Day</option>
+            <option value="1">1</option>
+          </select>
+          <select class="form-control form-control-1-4 font-xsmall">
+            <option value="0">Month</option>
+            <option value="1">1</option>
+          </select>
+          <select class="form-control form-control-1-4 font-xsmall">
+            <option value="0">Year</option>
+            <option value="1">1</option>
+          </select>
+        </div>
 
 
-			<h2 class="heading-small nl">Measures</h2>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="measure_create.html">Create a measure</a></h3>
-				<p class="font-xsmall">Create a single or multiple measures and assign to a regulation</p>
-			</div>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="measure_find.html">Find a measure</a></h3>
-				<p class="font-xsmall">Search for an existing measure on the database to view or make changes</p>
-			</div>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="measure_group_search_results.html">Measure groups</a></h3>
-				<p class="font-xsmall">View a list of all measure groups that have been created. Measure groups allow you to group related measures together.</p>
-			</div>
+  </div>
+				</div>
+
+				<div class="form-group">
+					<label class="form-label">Enter footnote description<span class="form-hint">Lorem ipsum</span></label>
+					<textarea class="form-control form-control-3-4 font-xsmall" name="textarea" id="textarea" rows="5"></textarea>
 
 
-			<h2 class="heading-small nl">Nomenclature</h2>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="nomenclature_view1.html">View and edit nomenclature</a></h3>
-				<p class="font-xsmall">View or edit the list of commodity codes used on the UK tariff.</p>
-			</div>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="additional_code_find.html">View and edit additional codes</a></h3>
-				<p class="font-xsmall">Additional codes are used for assigning Trade Remedy measures to commodity codes and for Meursing measures</p>
-			</div>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="nomenclature_groups.html">View nomenclature groups</a></h3>
-				<p class="font-xsmall">View, amend and create groups of nomenclature items that are related according to specific criteria</p>
-			</div>
+				</div>
+				<div class="form-group">
+					<button class="button" type="submit" id="signin">Create footnote</button>
+				</div>
+			</form>
 
-
-			<h2 class="heading-small nl">Other reference data</h2>
-      <div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="certificate_find.html">View and edit certificates</a></h3>
-				<p class="font-xsmall">View or edit the certificates that can be assigned to measure conditions</p>
-			</div>
-      <div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="certificate_type_find.html">View and edit certificate types</a></h3>
-				<p class="font-xsmall">View or edit the types of certificates that can be assigned to measure conditions</p>
-			</div>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="#">View and edit measure conditions</a></h3>
-				<p class="font-xsmall">View or edit the measure conditions that can be associated with measures</p>
-			</div>
-      <div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="footnote_find.html">View and edit footnotes</a></h3>
-				<p class="font-xsmall">consectetur adipiscing elit. Donec erat leo, pharetra at velit in, congue consequat ipsum.
-Donec consequat tellus nec finibus laoreet. Ut vel congue</p>
-			</div>
-      <div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="footnote_type_find.html">View and edit footnote types</a></h3>
-				<p class="font-xsmall">consectetur adipiscing elit. Donec erat leo, pharetra at velit in, congue consequat ipsum.
-Donec consequat tellus nec finibus laoreet. Ut vel congue</p>
-			</div>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="#">View and edit duty expressions</a></h3>
-				<p class="font-xsmall">consectetur adipiscing elit. Donec erat leo, pharetra at velit in, congue consequat ipsum. Donec consequat tellus nec finibus laoreet. Ut vel congue</p>
-			</div>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="#">View and edit measurement units</a></h3>
-				<p class="font-xsmall">consectetur adipiscing elit. Donec erat leo, pharetra at velit in, congue consequat ipsum.
-Donec consequat tellus nec finibus laoreet. Ut vel congue</p>
-			</div>
-      <div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="geographical_area_find.html">View and edit geographical areas</a></h3>
-				<p class="font-xsmall">consectetur adipiscing elit. Donec erat leo, pharetra at velit in, congue consequat ipsum.
-Donec consequat tellus nec finibus laoreet. Ut vel congue</p>
-			</div>
-
-
-			<h2 class="heading-small nl">View reports</h2>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="#">Lorem ipsum dolor</a></h3>
-				<p class="font-xsmall">consectetur adipiscing elit. Donec erat leo, pharetra at velit in, congue consequat ipsum. Donec consequat tellus nec finibus laoreet. Ut vel congue</p>
-			</div>
-
-
-			<h2 class="heading-small nl">Administration</h2>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="user_list.html">User management</a></h3>
-				<p class="font-xsmall">consectetur adipiscing elit. Donec erat leo, pharetra at velit in, congue consequat ipsum. Donec consequat tellus nec finibus laoreet. Ut vel congue</p>
-			</div>
-			<div class="w30 mt1">
-				<h3 class="heading-small" style="margin:0px"><a href="#">Audit</a></h3>
-				<p class="font-xsmall">consectetur adipiscing elit. Donec erat leo, pharetra at velit in, congue consequat ipsum. Donec consequat tellus nec finibus laoreet. Ut vel congue</p>
-			</div>
 
 		</main>
   </div>
