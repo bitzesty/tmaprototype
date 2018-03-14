@@ -48,6 +48,25 @@
 <link rel="stylesheet" media="screen" href="https://assets.publishing.service.gov.uk/static/core-layout-958be5810ae2fa11fba6bc815193f49b2f0868639649c975d08e12d6cfe50a5e.css" />
 <link rel="stylesheet" media="screen" href="/css/local.css" />
 
+<script type="text/javascript" language="javascript">
+<!--
+function showHideBlocks() {
+  var objNomenclatureGroupType = document.getElementById("objNomenclatureGroupType");
+  var idNomenclatureGroupType = objNomenclatureGroupType.options[objNomenclatureGroupType.selectedIndex].value;
+  if (idNomenclatureGroupType == 1) {
+    document.getElementById("divManualUpload").style.display = "block";
+    document.getElementById("divSelectionCriteria").style.display = "none";
+  } else if (idNomenclatureGroupType == 2) {
+    document.getElementById("divManualUpload").style.display = "none";
+    document.getElementById("divSelectionCriteria").style.display = "block";
+  }
+  else {
+    document.getElementById("divManualUpload").style.display = "none";
+    document.getElementById("divSelectionCriteria").style.display = "none";
+  }
+}
+//-->
+</script>
 
   </head>
 
@@ -110,14 +129,42 @@
 			</header>
 
 			<form style="mt1" action="#" method="post">
-				<div class="form-group">
-					<label class="form-label">Select the footnote type</label>
-					<select class="form-control form-control-1-3 font-xsmall">
-						<option value="0">--select footnote type--</option>
+
+        <div class="form-group">
+          <label class="font-xsmall">Please provide a name for this group of commodity codes</label>
+          <input type="text" maxlength="100" class="form-control form-control-1-2 font-xsmall" value=""></input>
+        </div>
+
+        <div class="form-group">
+					<label class="form-label">Select the type of nomenclature group</label>
+					<select id="objNomenclatureGroupType" class="form-control form-control-1-3 font-xsmall" onchange="javascript:showHideBlocks()">
+            <option value="0">--select nomenclature group type--</option>
+            <option value="1">Manual upload</option>
+            <option value="2">Selection criteria</option>
 					</select>
-          <p class="font-xsmall"><a href="">View and edit footnote types</a></p>
 				</div>
 
+        <div id="divManualUpload" style="display:none">
+          <div class="form-group">
+            <h2 class="heading-small">Manual upload</h2>
+            <div class="form-group">
+              <label class="form-label" for="file-input">
+                Please select a CSV file to upload containing a list of valid commodity codes
+                to add to the group.<br /><br />
+              </label>
+              <input type="file" id="file-input" class="font-xsmall">
+            </div>
+
+          </div>
+        </div>
+
+        <div id="divSelectionCriteria" style="display:none">
+          <div class="form-group">
+            <h2 class="heading-small">Selection criteria</h2>
+
+          </div>
+        </div>
+<!--
 				<div class="form-group">
 					<label class="form-label">Enter the date on which to execute this change</label>
 
@@ -164,7 +211,7 @@
 					<button class="button" type="submit" id="signin">Create footnote</button>
 				</div>
 			</form>
-
+//-->
 
 		</main>
   </div>
